@@ -1,11 +1,23 @@
-body {
-	padding: 10px;
-	text-align: center;
-	background-image: url("https://c8.alamy.com/comp/JAJ5W6/thermometer-temperature-instrument-for-measuring-hot-and-cold-temperatures-JAJ5W6.jpg");
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Utilities */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+	text-align: center;
+	background: url("https://c8.alamy.com/comp/JAJ5W6/thermometer-temperature-instrument-for-measuring-hot-and-cold-temperatures-JAJ5W6.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+/* Main */
 
 button {
 	display: inline-block;
@@ -26,25 +38,21 @@ button {
     user-select: none;
 }
 
+.p2 {
+    display: none;
+}
+
 .container {
 	width: 500px;
     height: 500px;
-	border-radius: 10px;
-	margin: 0 auto;
-	margin-top: 30px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-bottom: 10vh;
     border: 1px solid black;
     background-color: #2f3640;
     color: #fbc531;
-}
-
-.blue-button {
-    background-color: #487eb0;
-    border: 2px solid #487eb0
-}
-
-.blue-button:hover {
-    color: #487eb0;
-    background-color: white;
 }
 
 .green-button {
@@ -56,6 +64,16 @@ button {
 .green-button:hover {
     color: #44bd32;
     background-color: #fff;
+}
+
+.blue-button {
+    background-color: #487eb0;
+    border: 2px solid #487eb0
+}
+
+.blue-button:hover {
+    color: #487eb0;
+    background-color: white;
 }
 
 .temperature-output {
@@ -77,4 +95,32 @@ button {
 .reset-button:hover {
     color: #e84118;
     background-color: white;
+}
+
+/* RWD */
+
+@media (max-width: 767px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media (max-width: 767px) {
+
+    .p1 {
+        display: none;
+    }
+
+    .p2 {
+        display: block;
+    }
 }
