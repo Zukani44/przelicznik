@@ -7,17 +7,6 @@ body {
     background-size: cover;
 }
 
-.container {
-	width: 500px;
-    height: 500px;
-	border-radius: 10px;
-	margin: 0 auto;
-	margin-top: 30px;
-    border: 1px solid black;
-    background-color: #2f3640;
-    color: #fbc531;
-}
-
 button {
 	display: inline-block;
     padding: 11px 50px;
@@ -37,28 +26,39 @@ button {
     user-select: none;
 }
 
-#blue-button {
+.container {
+	width: 500px;
+    height: 500px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 30px;
+    border: 1px solid black;
+    background-color: #2f3640;
+    color: #fbc531;
+}
+
+.blue-button {
     background-color: #487eb0;
     border: 2px solid #487eb0
 }
 
-#blue-button:hover {
+.blue-button:hover {
     color: #487eb0;
     background-color: white;
 }
 
-#green-button {
+.green-button {
     margin: 10px;
     background-color: #44bd32;
     border: 2px solid #44bd32;
 }
   
-#green-button:hover {
+.green-button:hover {
     color: #44bd32;
     background-color: #fff;
 }
 
-#temperature-output {
+.temperature-output {
     margin-top: 10px;
     height: 300px;
     border: 1px solid;
@@ -68,13 +68,13 @@ button {
     font-size: 20px;
 }
 
-#reset-button {
+.reset-button {
     margin: 10px;
     background-color: #e84118;
     border: 2px solid #e84118;
 }
 
-#reset-button:hover {
+.reset-button:hover {
     color: #e84118;
     background-color: white;
 }
